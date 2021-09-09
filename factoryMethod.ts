@@ -37,9 +37,9 @@ class HTMLButton implements Button {
   }
 }
 class App {
-  dialog: any;
+  dialog: Dialog;
   constructor() {
-    this.dialog = "";
+    this.dialog = {} as Dialog;
   }
   init(config: string) {
     if (config === "Windows") {

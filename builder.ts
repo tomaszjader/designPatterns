@@ -40,9 +40,9 @@ class CarManualBuilder {
   }
 }
 class Director {
-  builder: any;
+  builder: Builder;
   constructor(builder?: Builder) {
-    this.builder = builder;
+    this.builder = builder || ({} as Builder);
   }
   constructSportsCar(builder: Builder): void {
     builder.reset();

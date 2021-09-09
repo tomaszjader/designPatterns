@@ -60,8 +60,8 @@ class Application {
 }
 class ApplicationConfigurator {
   main(config: string) {
-    let factory: any = {};
-    let app: any = {};
+    let factory: GUIFactory = {} as GUIFactory;
+    let app: Application = {} as Application;
     if (config === "Windows") {
       factory = new WinFactory();
     } else if (config === "Mac") {
